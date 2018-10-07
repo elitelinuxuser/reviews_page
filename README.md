@@ -1,1 +1,1 @@
-Landing Page for <a>buyreviews.in</a>
+Landing page for (https://buyreviews.in)
