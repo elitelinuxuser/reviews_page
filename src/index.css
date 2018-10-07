@@ -79,12 +79,12 @@ nav ul li a{
 /*------------- HEADER -------------------*/
 
 header {
-  background: url("./images/photo-1525184648845-66cbe3b6c59c.jpg");
-  background-size: 100%;
+  background-image: url("./images/marvin-meyer-571072-unsplash.jpg"), linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,0.5));
+  background-blend-mode: overlay;
+  background-size: cover;
   height: 700px;
   background-position: center;
   position: relative;
- 
 }
 
 header div.head {
@@ -100,7 +100,7 @@ header div.head {
 }
 
 header div.head  {
-  color: #222;
+  color: #fff;
 
 }
 
@@ -112,7 +112,7 @@ header div.head h1 {
   padding-top: 0px;
   margin: 0;
   letter-spacing: 4px;
-  border-right: 2px solid #111;
+  border-right: 2px solid #fff;
 }
 
 header div.head p {
@@ -150,8 +150,8 @@ main {
 
 main section {
   width: 70%;
-  padding: 90px 0;
-  margin: 50px auto 150px auto;
+  padding: 0;
+  margin: 50px auto;
   display: grid;
   grid-template-columns: 2fr 3fr;
   align-items: center;
@@ -202,7 +202,7 @@ main section div p {
 
 /* images are not compressed, remember to compress them before deployment */
 .gallery div.gallery-item-one {
-  background: url("./images/toa-heftiba-526264-unsplash.jpg");
+  background: url("./images/toa-heftiba-526264-unsplash.png");
   background-size: 160%;
  grid-column-end: span 2;
  grid-row-end: span 2;
@@ -226,7 +226,7 @@ main section div p {
   background-size: 160%;
 }
 .gallery div.gallery-item-six {
-  background: url("./images/taduuda-72915-unsplash.jpg");
+  background: url("./images/marvin-meyer-571072-unsplash.jpg");
   background-size: 160%;
 }
 .gallery div.gallery-item-one:hover, .gallery div.gallery-item-two:hover, .gallery div.gallery-item-three:hover, .gallery div.gallery-item-four:hover, .gallery div.gallery-item-five:hover, .gallery div.gallery-item-six:hover{
@@ -260,9 +260,9 @@ div.services {
 
 .services p.service-icon {
   font-size: 3.4rem;
-  padding: 30px 0px 30px 90px;
+  padding: 20px 0;
   margin: 0px 0px 30px 0px;
-  text-align: left;
+  text-align: center;
   color: rgb(0, 99, 248);
   filter: grayscale(0%);
   border-bottom: 2px solid rgb(0, 99, 248);

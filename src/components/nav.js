@@ -1,17 +1,26 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Nav extends Component {
   render() {
     return (
       <nav>
-          <ul>
-              <li className="logo">Design<span>Labs</span></li>
-          </ul>
-          <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Mission</a></li>
-              <li><a href="#">Contact</a></li>
-          </ul>
+        <ul>
+          <li className="logo">
+            Buy
+            <span>Reviews</span>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
       </nav>
     );
   }
