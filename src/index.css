@@ -438,6 +438,7 @@ footer ul li a {
     width: 75%;
     padding-top: 400px;
     grid-template-columns: 1fr;
+    color: black
     
   }
   header div.head h1 {
@@ -581,7 +582,8 @@ footer ul li a {
   header div.head {
     width: 75%;
     grid-template-columns: 1fr;
-    padding-top: 260px;
+    padding-top: 300px;
+    color: black
     
   }
   header div.head h1 {
@@ -595,7 +597,7 @@ footer ul li a {
   
 
   main section:first-of-type{
-    margin-top: 390px;
+    margin-top: 250px;
   }
 
   main section {
