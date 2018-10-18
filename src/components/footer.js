@@ -5,7 +5,14 @@ class Footer extends Component {
     return (
       <footer>
         <h3>BuyReviews</h3>
-        <p>support@buyreviews.in</p>
+        <p>
+          <a
+            href="mailto:info@buyreviews.in"
+            style={{ color: "#fff", textDecoration: "none" }}
+          >
+            info@buyreviews.in
+          </a>
+        </p>
         <ul>
           <li>
             <a href="#">

@@ -13,7 +13,6 @@ body * {
 .container { 
   background-color: #fff;
   width: 100%;
-  max-width: 1500px;
   margin: 0 auto;
   -webkit-box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
@@ -28,7 +27,6 @@ nav {
   background: #fff;
   z-index: 99;
   width: 100%;
-  max-width: 1500px;
   margin: 0 auto;  
   padding: 12px 0;
   display: grid;

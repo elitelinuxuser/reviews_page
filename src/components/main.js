@@ -3,6 +3,49 @@ import Form from "./form";
 import ScrollableAnchor from "react-scrollable-anchor";
 import { configureAnchors } from "react-scrollable-anchor";
 
+import ChatBot from "react-simple-chatbot";
+import { ThemeProvider } from "styled-components";
+import google from "../images/google.svg";
+
+const theme = {
+  botBubbleColor: "#0063f8",
+  headerBgColor: "#0063f8",
+  background: "#f5f8fb",
+  headerFontColor: "#fff",
+  headerFontSize: "15px",
+  botFontColor: "#fff",
+  userBubbleColor: "#fff"
+};
+
+const steps = [
+  {
+    id: "0",
+    message: "Hey, there! How can I help you?",
+    trigger: "2"
+  },
+  {
+    id: "2",
+    user: true,
+    trigger: "1"
+  },
+  {
+    id: "1",
+    message:
+      "Please send your contact details with email id and we will get back to you soon",
+    trigger: "3"
+  },
+  {
+    id: "3",
+    message: "Thanks for your time.",
+    trigger: "4"
+  },
+  {
+    id: "4",
+    message: "Have a great day!",
+    trigger: "2"
+  }
+];
+
 configureAnchors({ offset: -60, scrollDuration: 280 });
 
 class Main extends Component {
@@ -28,7 +71,10 @@ class Main extends Component {
             <div className="services">
               <div className="service-one">
                 <p className="service-icon">
-                  <i className="fab fa-facebook-f" />
+                  <i
+                    style={{ color: "#395498" }}
+                    className="fab fa-facebook-f"
+                  />
                 </p>
                 <p className="service-title">Facebook</p>
                 <p>
@@ -40,7 +86,7 @@ class Main extends Component {
               </div>
               <div className="service-two">
                 <p className="service-icon">
-                  <i className="fab fa-youtube" />
+                  <i style={{ color: "#CD2F2A" }} className="fab fa-youtube" />
                 </p>
                 <p className="service-title">Youtube</p>
                 <p>
@@ -52,7 +98,11 @@ class Main extends Component {
               </div>
               <div className="service-three">
                 <p className="service-icon">
-                  <i class="fab fa-google-play" />
+                  <img
+                    src={google}
+                    style={{ height: 43.2 }}
+                    alt="playstore-logo"
+                  />
                 </p>
                 <p className="service-title">PlayStore</p>
                 <p>
@@ -104,6 +154,10 @@ class Main extends Component {
             <Form />
           </section>
         </ScrollableAnchor>
+
+        <ThemeProvider theme={theme}>
+          <ChatBot floating steps={steps} />
+        </ThemeProvider>
       </main>
     );
   }
