@@ -8,8 +8,8 @@ import { ThemeProvider } from "styled-components";
 import google from "../images/google.svg";
 
 const theme = {
-  botBubbleColor: "#0063f8",
-  headerBgColor: "#0063f8",
+  botBubbleColor: "#673AB7",
+  headerBgColor: "#673AB7",
   background: "#f5f8fb",
   headerFontColor: "#fff",
   headerFontSize: "15px",
