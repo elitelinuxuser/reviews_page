@@ -6,6 +6,7 @@ import { configureAnchors } from "react-scrollable-anchor";
 import ChatBot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
 import google from "../images/google.svg";
+import Testimonials from './testimonials';
 
 const theme = {
   botBubbleColor: "#673AB7",
@@ -116,6 +117,8 @@ class Main extends Component {
           </div>
         </ScrollableAnchor>
 
+        <Testimonials />
+
         <div className="gallery">
           <div className="gallery-item-one" />
           <div className="gallery-item-two" />
@@ -124,6 +127,8 @@ class Main extends Component {
           <div className="gallery-item-five" />
           <div className="gallery-item-six" />
         </div>
+
+        
 
         {/* <section>
           <h2>Our Mission</h2>
