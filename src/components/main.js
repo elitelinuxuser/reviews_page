@@ -2,11 +2,15 @@ import React, { Component } from "react";
 import Form from "./form";
 import ScrollableAnchor from "react-scrollable-anchor";
 import { configureAnchors } from "react-scrollable-anchor";
+import {Row, Col} from 'reactstrap';
 
 import ChatBot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
 import google from "../images/google.svg";
 import Testimonials from './testimonials';
+
+import image1 from '../images/image1.jpeg';
+import image2 from '../images/image2.jpeg';
 
 const theme = {
   botBubbleColor: "#0063f8",
@@ -117,8 +121,14 @@ class Main extends Component {
           </div>
         </ScrollableAnchor>
 
-        <Testimonials />
-
+        <div className='container-fluid'>
+        <Row>
+          <Col className="testimonial_left"></Col>
+          <Col><Testimonials /></Col>
+          <Col className="testimonial_right"></Col>
+        </Row>
+        </div>
+        
         <div className="gallery">
           <div className="gallery-item-one" />
           <div className="gallery-item-two" />

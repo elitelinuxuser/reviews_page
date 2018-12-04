@@ -13,28 +13,6 @@ class Grids extends Component {
         selectedOption: 'option1'
     }
 
-    // handleClick = (e)=> {
-    //     if(e.target.title="slide1"){
-    //         this.setState({
-    //             checked: 1
-    //         })
-    //     }
-    //     else if(e.target.title="slide2"){
-    //         this.setState({
-    //             checked: 2
-    //         })
-    //     }
-    //     else if(e.target.title="slide3"){
-    //         this.setState({
-    //             checked: 3
-    //         })
-    //     }
-    //     else{
-    //         this.setState({
-    //             checked: 4
-    //         })
-    //     }
-    // }
     handleChange = (e)=>{
         this.setState({
             selectedOption: e.target.value
