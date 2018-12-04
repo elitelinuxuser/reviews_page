@@ -13,8 +13,8 @@ import image1 from '../images/image1.jpeg';
 import image2 from '../images/image2.jpeg';
 
 const theme = {
-  botBubbleColor: "#0063f8",
-  headerBgColor: "#0063f8",
+  botBubbleColor: "#673AB7",
+  headerBgColor: "#673AB7",
   background: "#f5f8fb",
   headerFontColor: "#fff",
   headerFontSize: "15px",
